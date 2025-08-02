@@ -44,6 +44,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
         }
       ]
     },
@@ -53,6 +57,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
         }
       ]
     },
@@ -62,6 +70,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(html|css|js|xml|txt)$",
+      "headers": [
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
         }
       ]
     }

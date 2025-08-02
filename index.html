@@ -64,11 +64,8 @@
     <meta name="theme-color" content="#A52A2A">
     
     <!-- Resource hints for better performance -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -271,13 +268,132 @@
     }
     </script>
     
-    <!-- Critical CSS - Load immediately -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/core.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/custom.css"/>
+    <!-- Critical CSS - Inline for above-the-fold content -->
+    <style>
+    /* Critical CSS for above-the-fold content */
+    /* Essential styles only - load this inline */
+    
+    /* Reset and base styles */
+    *{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
+    body{ font-family:'Open Sans', sans-serif; font-size:16px; color: #5d5d5d; font-weight: 100;line-height: 24px;overflow-x: hidden;margin:0;padding:0;}
+    img {width:100%; height:auto; max-width:100%; border-style: none;}
+    
+    /* Essential text colors */
+    .text-white {color:#FFF}
+    .text-black {color:#000}
+    .text-extra-dark-gray {color:#232323}
+    .text-dark-gray {color: #494949 }
+    .text-red {color: #A52A2A}
+    
+    /* Essential background colors */
+    .bg-transparent {background-color: transparent;}
+    .bg-white {background-color:#fff;}
+    .bg-black {background-color:#000;}
+    .bg-light-gray {background-color: #f9f9f9}
+    .bg-red{background-color:#A52A2A;}
+    
+    /* Essential typography */
+    h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0; letter-spacing: 0; font-weight: 400;}
+    h1 {font-size:70px; line-height: 70px;}
+    h2 {font-size:55px; line-height:60px}
+    h3 {font-size:48px; line-height:54px}
+    h4 {font-size:40px; line-height:46px}
+    h5 {font-size:32px; line-height:40px}
+    h6 {font-size:25px; line-height:30px}
+    
+    /* Essential layout */
+    .container {width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;}
+    .row {display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;}
+    .col-md-6 {flex: 0 0 50%; max-width: 50%; padding-right: 15px; padding-left: 15px;}
+    .col-md-4 {flex: 0 0 33.333333%; max-width: 33.333333%; padding-right: 15px; padding-left: 15px;}
+    .col-sm-6 {flex: 0 0 50%; max-width: 50%; padding-right: 15px; padding-left: 15px;}
+    
+    /* Essential buttons */
+    .btn {display:inline-block; border:2px solid transparent; letter-spacing: .5px; line-height: inherit; border-radius: 0; text-transform:capitalize; width: auto; font-family:'Raleway', sans-serif; font-weight: 500; transition-duration: 0.3s; transition: all 0.3s !important; transition-timing-function: ease-in-out}
+    .btn.btn-red {background: #A52A2A !important; border-color: #A52A2A !important; color: #fff !important;}
+    .btn.btn-red:hover, .btn.btn-red:focus, .btn.btn-red:active {background: transparent !important; border-color: #A52A2A !important; color: #A52A2A !important;}
+    .btn.btn-large {font-size:14px; padding: 9px 34px; line-height: 25px}
+    .btn.btn-rounded {border-radius: 50px}
+    
+    /* Essential spacing */
+    .margin-20px-bottom {margin-bottom:20px}
+    .margin-30px-bottom {margin-bottom:30px}
+    .margin-50px-top {margin-top:50px}
+    .padding-40px-tb {padding-top:40px; padding-bottom:40px}
+    
+    /* Essential navigation */
+    .navbar {position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: .5rem 1rem;}
+    .navbar-brand {display: inline-block; padding-top: .3125rem; padding-bottom: .3125rem; margin-right: 1rem; font-size: 1.25rem; line-height: inherit; white-space: nowrap;}
+    .navbar-nav {display: flex; flex-direction: row; padding-left: 0; margin-bottom: 0; list-style: none;}
+    .navbar-nav .nav-link {padding-right: 0; padding-left: 0;}
+    
+    /* Essential sections */
+    section {padding: 140px 0; overflow: hidden;}
+    .no-padding {padding:0 !important}
+    .no-transition *, .swiper-container *, .mfp-container *, .skillbar-bar-main *, .portfolio-grid *, .parallax, .header-searchbar *, .header-social-icon * { transition-timing-function:initial; -moz-transition-timing-function:initial; -webkit-transition-timing-function:initial; -o-transition-timing-function:initial; -ms-transition-timing-function:initial; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; -ms-transition-duration: 0s; }
+    
+    /* Essential utilities */
+    .text-center {text-align: center !important;}
+    .text-left {text-align: left !important;}
+    .text-right {text-align: right !important;}
+    .center-col {float:none; margin-left:auto; margin-right:auto }
+    .cover-background {position: relative !important; background-size: cover !important; overflow: hidden !important; background-position: center !important; background-repeat: no-repeat !important;}
+    
+    /* Essential responsive */
+    @media (max-width: 767px) {
+        .xs-text-center {text-align: center !important;}
+        .xs-margin-30px-top {margin-top:30px !important;}
+        .xs-margin-50px-bottom {margin-bottom:50px !important;}
+        .xs-width-100 {width:100%;}
+        .xs-margin-lr-auto {margin-left:auto !important; margin-right:auto !important;}
+        section {padding: 50px 0;}
+        h1 {font-size: 35px; line-height: 35px;}
+        h2 {font-size: 25px; line-height: 30px;}
+        h3 {font-size: 20px; line-height: 25px;}
+    }
+    
+    /* Essential accessibility */
+    .sr-only {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;}
+    .skip-link {position: absolute; top: -40px; left: 6px; background: #000; color: #fff; padding: 8px; text-decoration: none; z-index: 1000;}
+    .skip-link:focus {top: 6px;}
+    
+    /* Essential focus styles */
+    a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;text-decoration: none}
+    [tabindex]:focus {outline: 2px solid #A52A2A; outline-offset: 2px;}
+    
+    /* Critical rendering path optimizations */
+    body, input, select, textarea, button, .form-control, label {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+    
+    /* Force Poppins font on calculator elements */
+    #work input, 
+    #work select, 
+    #work label, 
+    #work .form-control, 
+    #work .checkbox label,
+    #work .panel-title,
+    #work .results-panel,
+    #work button {
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    /* Animation duration */
+    .wow {
+        visibility: hidden;
+    }
+    .animated {
+        animation-duration: 1s;
+    }
+    </style>
     
     <!-- Non-critical CSS - Load asynchronously -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/core.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -290,50 +406,8 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/chatbot.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
-    <!-- Preload critical fonts -->
+    <!-- Google Fonts - Load asynchronously -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
-    <!-- Critical CSS for above-the-fold content -->
-    <style>
-        /* Critical rendering path optimizations */
-        body, input, select, textarea, button, .form-control, label {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-        }
-        
-        /* Force Poppins font on calculator elements */
-        #work input, 
-        #work select, 
-        #work label, 
-        #work .form-control, 
-        #work .checkbox label,
-        #work .panel-title,
-        #work .results-panel,
-        #work button {
-            font-family: 'Poppins', sans-serif !important;
-        }
-
-        /* Animation duration */
-        .wow {
-            visibility: hidden;
-        }
-        .animated {
-            animation-duration: 1s;
-        }
-        .animated.slow {
-            animation-duration: 1.5s;
-        }
-        .animated.slower {
-            animation-duration: 2s;
-        }
-        .animated.fast {
-            animation-duration: 0.8s;
-        }
-        .animated.faster {
-            animation-duration: 0.5s;
-        }
-    </style>
     <!-- Add this before closing head tag -->
     <script type="application/ld+json">
     {
@@ -433,7 +507,7 @@
                                 <!-- Start Header Navigation -->
                                                         <div class="navbar-header">
                             <a href="#home" class="navbar-brand" aria-label="MG Accounting Melbourne - Professional Tax Accountants">
-                                <img src="images/logo-blue-black.png" alt="MG Accounting Melbourne - Professional Tax Accountants & Business Advisors" class="logo" style="max-height: 50px; width: auto;">
+                                <img src="images/logo-blue-black.png" alt="MG Accounting Melbourne - Professional Tax Accountants & Business Advisors" class="logo" style="max-height: 50px; width: auto;" width="200" height="50">
                             </a>
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
                                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -1360,34 +1434,56 @@
 
 
 
-<!-- javascript libraries -->
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.appear.min.js"></script>
-<!-- owl carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- magnific popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- flip -->
-<script src="js/jquery.flip.min.js"></script>
-<!-- fancybox -->
-<script src="js/jquery.fancybox.min.js"></script>
-<!-- Swiper Core Javascript -->
-<script src="js/swiper.min.js"></script>
-<!-- Morphext js -->
-<script src="js/morphext.min.js"></script>
-<!-- push nav -->
-<script src="js/push_nav.js"></script>
-<!-- wow -->
-<script src="js/wow.js"></script>
-<!-- parallax -->
-<script src="js/parallaxie.min.js"></script>
-<!-- isotope.pkgd.min js -->
-<script src="js/isotope.pkgd.min.js"></script>
-<!-- revolution -->
-<!-- Critical JavaScript - Load immediately -->
-<script src="js/main.js"></script>
-<script src="js/tax-calculator.js"></script>
+    <!-- Critical JavaScript - Load immediately -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tax-calculator.js"></script>
+    
+    <!-- Performance optimizations -->
+    <script>
+    // Add passive event listeners for better scrolling performance
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add passive listeners to scroll events
+        const scrollElements = document.querySelectorAll('.scroll, [data-toggle="collapse"]');
+        scrollElements.forEach(function(element) {
+            element.addEventListener('touchstart', function(){}, {passive: true});
+            element.addEventListener('touchmove', function(){}, {passive: true});
+            element.addEventListener('wheel', function(){}, {passive: true});
+        });
+        
+        // Optimize images with lazy loading
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    });
+    </script>
+
+<!-- Non-critical JavaScript - Load asynchronously -->
+<script defer src="js/jquery.appear.min.js"></script>
+<script defer src="js/owl.carousel.min.js"></script>
+<script defer src="js/jquery.magnific-popup.min.js"></script>
+<script defer src="js/jquery.flip.min.js"></script>
+<script defer src="js/jquery.fancybox.min.js"></script>
+<script defer src="js/swiper.min.js"></script>
+<script defer src="js/morphext.min.js"></script>
+<script defer src="js/push_nav.js"></script>
+<script defer src="js/wow.js"></script>
+<script defer src="js/parallaxie.min.js"></script>
+<script defer src="js/isotope.pkgd.min.js"></script>
 
 <!-- Non-critical JavaScript - Load asynchronously -->
 <script defer src="revolution/js/jquery.themepunch.tools.min.js"></script>
