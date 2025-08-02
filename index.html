@@ -599,7 +599,7 @@
                                     Integrity, diligence, transparency, fairness, humility, and respect are the cornerstones of our operational philosophy. We uphold these values in every aspect of our work, ensuring that our clients receive the highest standards of service and professionalism. Additionally, we prioritise privacy and confidentiality, safeguarding the trust our clients place in us.
                                 </p>
                                 
-                                <a href="#contact" class="btn btn-red btn-rounded btn-large margin-50px-top sm-margin-30px-top scroll wow bounceIn" data-wow-delay="1.6s">Email Us</a>
+                                <a href="#contact" class="btn btn-red btn-rounded btn-large margin-50px-top sm-margin-30px-top scroll wow bounceIn" data-wow-delay="1.6s">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -1439,6 +1439,13 @@ if (typeof jQuery != 'undefined') {
             // Log when modal is shown
             $('#consultationModal').on('shown.bs.modal', function () {
                 console.log('Modal shown');
+                // Focus management: focus on first focusable element in modal
+                $(this).find('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])').first().focus();
+            });
+            
+            // Focus management: return focus to trigger when modal is hidden
+            $('#consultationModal').on('hidden.bs.modal', function () {
+                $('[data-toggle="modal"][data-target="#consultationModal"]').focus();
             });
         } else {
             console.log('Modal element not found');
