@@ -1,0 +1,21 @@
+{
+  "name": "MG Accounting Melbourne",
+  "short_name": "MG Accounting",
+  "description": "Professional tax accountants and business advisors in Oakleigh, Melbourne",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#A52A2A",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo-blue-black.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
