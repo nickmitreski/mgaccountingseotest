@@ -95,8 +95,8 @@
 /* When the result is negative (payment due) */
 .result-item.total span:last-child.negative {
     background: #ffffff;
-    color: #A52A2A;
-    border: 2px solid #A52A2A;
+    color: #CB342C;
+    border: 2px solid #CB342C;
 }
 
 .panel-group .panel {

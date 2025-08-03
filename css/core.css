@@ -47,7 +47,7 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px;list-style-type: n
 .text-very-light-gray {color:#ededed}
 .text-yellow {color:#CB342C}
 .text-green {color:#CB342C;}
-.text-red {color: #A52A2A}
+.text-red {color: #CB342C}
 .text-blue {color: #CB342C}
 .text-dark-blue{color: #000000
 }
@@ -101,7 +101,7 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px;list-style-type: n
 .bg-blue {background-color: #CB342C;}
 .bg-lg-blue {background-color: #CB342C;}
 .bg-green {background-color: #CB342C;}
-.bg-red{background-color:#A52A2A;}
+.bg-red{background-color:#CB342C;}
 .bg-dark-blue{background: #CB342C
 }
 .bg-orange{background: #CB342C}
@@ -174,8 +174,8 @@ section.half-section {padding:80px 0;}
 .btn.btn-red:hover, 
 .btn.btn-red:focus,
 .btn.btn-red:active {
-    background: #A52A2A !important;
-    border-color: #A52A2A !important;
+    background: #CB342C !important;
+    border-color: #CB342C !important;
     color: #fff !important;
 }
 .btn.btn-orange {background: #CB342C !important; border-color: #CB342C !important; color: #fff !important;}
@@ -199,11 +199,11 @@ section.half-section {padding:80px 0;}
 .btn.btn-transparent-dark-blue:hover{background: #000000; border-color: #000000 !important; color:#fff !important;}
 .btn.btn-transparent-green {background: transparent; border-color: #CB342C; color: #CB342C}
 .btn.btn-transparent-green:hover{background: #CB342C; border-color: #CB342C !important; color:#fff !important;}
-.btn.btn-transparent-red {background: transparent; border-color: #A52A2A; color: #A52A2A}
-.btn.btn-transparent-red:hover, .btn.btn-transparent-red:focus, .btn.btn-transparent-red:active {background: #A52A2A; border-color: #A52A2A !important; color: #fff !important;}
+.btn.btn-transparent-red {background: transparent; border-color: #CB342C; color: #CB342C}
+.btn.btn-transparent-red:hover, .btn.btn-transparent-red:focus, .btn.btn-transparent-red:active {background: #CB342C; border-color: #CB342C !important; color: #fff !important;}
 .btn.btn-transparent-orange {background: transparent; border-color: #CB342C; color: #CB342C}
 .btn.btn-transparent-orange:hover{background: #CB342C; border-color: #CB342C !important; color:#fff !important;}
-.btn.btn-hvr-red:hover, .btn.btn-hvr-red:focus, .btn.btn-hvr-red:active {background: #A52A2A !important; border-color: #A52A2A !important; color:#fff !important;}
+.btn.btn-hvr-red:hover, .btn.btn-hvr-red:focus, .btn.btn-hvr-red:active {background: #CB342C !important; border-color: #CB342C !important; color:#fff !important;}
 
 
 /* button rounded */
